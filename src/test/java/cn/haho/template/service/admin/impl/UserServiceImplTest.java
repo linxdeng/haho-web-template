@@ -1,5 +1,6 @@
 package cn.haho.template.service.admin.impl;
 
+import java.util.Date;
 import java.util.List;
 
 import org.junit.Test;
@@ -19,5 +20,14 @@ public class UserServiceImplTest extends BaseTest {
         user.setId(30L);
         List<User> list = userService.list(user);
         System.out.println(list);
+    }
+
+    @Test
+    public void testInsertToMongo() {
+        User user = new User();
+        user.setId(1L);
+        user.setBirthday(new Date());
+        user.setName("linx");
+        userService.insertToMongo(user);
     }
 }

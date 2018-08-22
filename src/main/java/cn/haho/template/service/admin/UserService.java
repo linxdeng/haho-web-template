@@ -12,4 +12,11 @@ public interface UserService {
      * @return
      */
     public List<User> list(User user);
+
+    /**
+     * 将数据插入mongodb
+     * 
+     * @param user
+     */
+    public void insertToMongo(User user);
 }
