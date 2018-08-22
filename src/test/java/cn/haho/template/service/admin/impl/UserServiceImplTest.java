@@ -30,4 +30,13 @@ public class UserServiceImplTest extends BaseTest {
         user.setName("linx");
         userService.insertToMongo(user);
     }
+
+    @Test
+    public void testSetUserCache() {
+        User user = new User();
+        user.setId(1L);
+        user.setBirthday(new Date());
+        user.setName("linx");
+        userService.setUserCache(user);
+    }
 }

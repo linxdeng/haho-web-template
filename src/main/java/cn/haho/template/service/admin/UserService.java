@@ -19,4 +19,9 @@ public interface UserService {
      * @param user
      */
     public void insertToMongo(User user);
+
+    /**
+     * 设置user缓存
+     */
+    public void setUserCache(User user);
 }
