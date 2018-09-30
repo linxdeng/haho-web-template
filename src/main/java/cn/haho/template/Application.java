@@ -14,6 +14,6 @@ public class Application {
     public static void main(String[] args) throws IOException {
         logger.info("\nstart ------------ XXX服务----------------\n");
         SpringApplication.run(Application.class, args);
-        logger.info("\nstarted! ------------ haho-web-template----------------\n");
+        logger.info("\nstarted! ------------ xxx服务已启动----------------\n");
     }
 }
