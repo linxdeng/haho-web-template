@@ -11,6 +11,11 @@ public class HomeController {
      * 
      * @return
      */
+    @GetMapping("/")
+    public String defaultPage() {
+        return "home";
+    }
+
     @GetMapping("/home")
     public String home() {
         return "home";
