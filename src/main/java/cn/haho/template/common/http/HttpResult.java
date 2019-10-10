@@ -1,7 +1,5 @@
 package cn.haho.template.common.http;
 
-import com.alibaba.fastjson.JSON;
-
 /**
  * @Description:
  * @Auther: linx.deng
