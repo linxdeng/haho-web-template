@@ -11,17 +11,17 @@ public interface UserService {
      * @param user
      * @return
      */
-    public List<User> list(User user);
+    List<User> list(User user);
 
     /**
      * 将数据插入mongodb
      * 
      * @param user
      */
-    public void insertToMongo(User user);
+    void insertToMongo(User user);
 
     /**
      * 设置user缓存
      */
-    public void setUserCache(User user);
+    void setUserCache(User user);
 }

@@ -15,5 +15,5 @@ public interface UserMapper {
      * @param user
      * @return List<User>
      */
-    public List<User> list(User user);
+    List<User> list(User user);
 }

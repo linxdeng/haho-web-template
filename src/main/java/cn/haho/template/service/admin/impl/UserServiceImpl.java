@@ -14,13 +14,13 @@ import cn.haho.template.service.admin.UserService;
 @Service
 public class UserServiceImpl implements UserService {
     @Autowired
-    UserMapper userMapper;
+    private UserMapper userMapper;
 
     @Autowired
     private MongoTemplate mongoTemplate;
 
     @Autowired
-    StringRedisTemplate template;
+    private StringRedisTemplate template;
 
     @Override
     public List<User> list(User user) {
